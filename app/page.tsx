@@ -15,7 +15,7 @@ export default async function HomePage() {
             <p className="eyebrow">Workspace</p>
             <h1 className="title">GitHub Systems In Orbit</h1>
             <p className="subtitle">
-              GitHub から生成した静的スナップショットを使って、スマホでも開ける軽いアプリとして配布します。
+              GitHub から生成した静的スナップショットを使い、3D 状態把握を崩さずに動く軽さも維持します。
               接続定義があるシステムだけをマップ化し、定義のないものは repo view として正直に表示します。
             </p>
             <div className="hero-stats">
@@ -29,7 +29,7 @@ export default async function HomePage() {
               </div>
               <div className="hero-stat">
                 <span className="meta-label">Mobile</span>
-                <strong>PWA</strong>
+                <strong>Android</strong>
               </div>
             </div>
           </header>
@@ -38,7 +38,7 @@ export default async function HomePage() {
             <p className="eyebrow">Phone Use</p>
             <h2 style={{ margin: 0 }}>Install And Open Fast</h2>
             <p className="subtitle">
-              公開URLから開いてホーム画面に追加できます。ビルド時にJSONを固定化するので、起動時に GitHub を毎回叩かず軽く開けます。
+              公開URLでも使えますが、主ルートは Android アプリ化です。ビルド時に JSON を固定化するので、起動時に GitHub を毎回叩かず軽く開けます。
             </p>
           </aside>
         </section>

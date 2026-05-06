@@ -2,6 +2,8 @@
 
 Installable PWA for visualizing the current state of multiple GitHub systems as labeled modules and connections.
 
+Now also includes an Android app shell that bundles the exported app locally.
+
 ## What It Is
 
 - Static-exported Next.js app
@@ -25,6 +27,25 @@ npm run snapshot
 npm run build
 npm run dev
 ```
+
+## Android App Build
+
+The Android app shell lives in [android](C:/Users/it11ataniguchi/Documents/New%20project/git-orbit-mobile/android).
+
+Current local output:
+
+- [app-debug.apk](C:/Users/it11ataniguchi/Documents/New%20project/git-orbit-mobile/android/app/build/outputs/apk/debug/app-debug.apk)
+
+What the Android shell does:
+
+- bundles the exported app into the APK
+- loads it from local app assets, not from a remote website
+- opens external GitHub links in the browser
+
+Repeatable local flow:
+
+1. Build app assets with `node scripts/build-android-assets.mjs`
+2. Build the debug APK with Gradle from the local Android project
 
 If `gh auth login` is already complete, snapshot generation can reuse that login. You can also provide tokens with:
 

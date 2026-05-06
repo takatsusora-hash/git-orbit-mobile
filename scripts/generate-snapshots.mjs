@@ -33,6 +33,10 @@ function deriveModuleStatus(progress, checks) {
   return "verified";
 }
 
+function normalizeProgress(value) {
+  return Math.max(0, Math.min(100, Math.round(value)));
+}
+
 function assignModuleLayout(modules) {
   const laneX = { ui: -8, api: 0, service: 8, db: 14, external: -14, workflow: 0 };
   const laneZ = { ui: -4, api: 0, service: 4, db: 10, external: 10, workflow: -12 };
@@ -201,6 +205,7 @@ async function buildFallbackModules(systemId, repos, config) {
     entries.slice(0, 12).forEach((entry, index) => {
       const workflowStatus = repo.latestWorkflow?.status ?? "unknown";
       const progress = workflowStatus === "fail" ? 42 : repo.openIssues === 0 ? 84 : 68;
+      const normalizedProgress = normalizeProgress(progress);
       const lower = entry.name.toLowerCase();
       const type =
         lower.includes("app") || lower.includes("web") || lower.includes("front")
@@ -229,8 +234,8 @@ async function buildFallbackModules(systemId, repos, config) {
         repo: repo.name,
         path: entry.name,
         type,
-        progress,
-        status: deriveModuleStatus(progress, checks),
+        progress: normalizedProgress,
+        status: deriveModuleStatus(normalizedProgress, checks),
         checks,
         evidence: [
           { type: "artifact", title: `${repo.owner}/${repo.name}`, url: repo.url },
@@ -294,6 +299,7 @@ async function buildMappedModules(systemId, map, repos, localPath, config) {
         (workflowStatus === "pass" ? 25 : workflowStatus === "fail" ? 10 : 15) +
         (repo?.openIssues === 0 ? 10 : 5) +
         (repo?.pushedAt ? 10 : 0);
+      const normalizedProgress = normalizeProgress(progress);
 
       const checks = {
         exists,
@@ -312,8 +318,8 @@ async function buildMappedModules(systemId, map, repos, localPath, config) {
         repo: module.repo,
         path: module.path,
         type: module.type,
-        progress,
-        status: deriveModuleStatus(progress, checks),
+        progress: normalizedProgress,
+        status: deriveModuleStatus(normalizedProgress, checks),
         checks,
         evidence: repo
           ? [
@@ -399,7 +405,7 @@ function buildFailedSystem(entry, error) {
         repo: entry.repos[0] ?? entry.owner,
         path: "snapshot",
         type: "workflow",
-        progress: 8,
+    progress: 8,
         status: "broken",
         checks: {
           exists: false,
@@ -536,7 +542,7 @@ async function main() {
     repos: system.repos,
     repoSnapshots: system.repoSnapshots,
     modules: system.modules,
-    connections: [],
+    connections: system.connections,
     tags: system.tags,
     summary: system.summary,
     mode: system.mode,

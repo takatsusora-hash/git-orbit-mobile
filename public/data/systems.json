@@ -15,12 +15,17 @@
         "name": "git-orbit-mobile",
         "branch": "main",
         "url": "https://github.com/takatsusora-hash/git-orbit-mobile",
-        "isPrivate": true,
-        "updatedAt": "2026-05-06T12:54:27Z",
-        "pushedAt": "2026-05-06T12:54:23Z",
+        "isPrivate": false,
+        "updatedAt": "2026-05-06T13:17:40Z",
+        "pushedAt": "2026-05-06T13:13:48Z",
         "defaultBranch": "main",
         "openPullRequests": 0,
         "openIssues": 0,
+        "latestWorkflow": {
+          "name": "Deploy Pages",
+          "status": "pass",
+          "url": "https://github.com/takatsusora-hash/git-orbit-mobile/actions/runs/25437479301"
+        },
         "primaryLanguage": "TypeScript"
       }
     ],
@@ -32,14 +37,14 @@
         "repo": "git-orbit-mobile",
         "path": "app",
         "type": "ui",
-        "progress": 95,
+        "progress": 100,
         "status": "verified",
         "checks": {
           "exists": true,
           "build": "pass",
-          "typecheck": "unknown",
-          "test": "unknown",
-          "deploy": "unknown",
+          "typecheck": "pass",
+          "test": "pass",
+          "deploy": "pass",
           "runtime": "pass",
           "lastUpdatedAt": "1h"
         },
@@ -58,6 +63,12 @@
             "type": "issue",
             "title": "Open issues: 0",
             "url": "https://github.com/takatsusora-hash/git-orbit-mobile/issues"
+          },
+          {
+            "type": "action",
+            "title": "Deploy Pages",
+            "url": "https://github.com/takatsusora-hash/git-orbit-mobile/actions/runs/25437479301",
+            "status": "pass"
           }
         ],
         "position": [
@@ -73,14 +84,14 @@
         "repo": "git-orbit-mobile",
         "path": "components",
         "type": "ui",
-        "progress": 95,
+        "progress": 100,
         "status": "verified",
         "checks": {
           "exists": true,
           "build": "pass",
-          "typecheck": "unknown",
-          "test": "unknown",
-          "deploy": "unknown",
+          "typecheck": "pass",
+          "test": "pass",
+          "deploy": "pass",
           "runtime": "pass",
           "lastUpdatedAt": "1h"
         },
@@ -99,6 +110,12 @@
             "type": "issue",
             "title": "Open issues: 0",
             "url": "https://github.com/takatsusora-hash/git-orbit-mobile/issues"
+          },
+          {
+            "type": "action",
+            "title": "Deploy Pages",
+            "url": "https://github.com/takatsusora-hash/git-orbit-mobile/actions/runs/25437479301",
+            "status": "pass"
           }
         ],
         "position": [
@@ -114,14 +131,14 @@
         "repo": "git-orbit-mobile",
         "path": "lib/data",
         "type": "api",
-        "progress": 95,
+        "progress": 100,
         "status": "verified",
         "checks": {
           "exists": true,
           "build": "pass",
-          "typecheck": "unknown",
-          "test": "unknown",
-          "deploy": "unknown",
+          "typecheck": "pass",
+          "test": "pass",
+          "deploy": "pass",
           "runtime": "pass",
           "lastUpdatedAt": "1h"
         },
@@ -140,6 +157,12 @@
             "type": "issue",
             "title": "Open issues: 0",
             "url": "https://github.com/takatsusora-hash/git-orbit-mobile/issues"
+          },
+          {
+            "type": "action",
+            "title": "Deploy Pages",
+            "url": "https://github.com/takatsusora-hash/git-orbit-mobile/actions/runs/25437479301",
+            "status": "pass"
           }
         ],
         "position": [
@@ -155,14 +178,14 @@
         "repo": "git-orbit-mobile",
         "path": "lib/github",
         "type": "service",
-        "progress": 95,
+        "progress": 100,
         "status": "verified",
         "checks": {
           "exists": true,
           "build": "pass",
-          "typecheck": "unknown",
-          "test": "unknown",
-          "deploy": "unknown",
+          "typecheck": "pass",
+          "test": "pass",
+          "deploy": "pass",
           "runtime": "pass",
           "lastUpdatedAt": "1h"
         },
@@ -181,6 +204,12 @@
             "type": "issue",
             "title": "Open issues: 0",
             "url": "https://github.com/takatsusora-hash/git-orbit-mobile/issues"
+          },
+          {
+            "type": "action",
+            "title": "Deploy Pages",
+            "url": "https://github.com/takatsusora-hash/git-orbit-mobile/actions/runs/25437479301",
+            "status": "pass"
           }
         ],
         "position": [
@@ -196,14 +225,14 @@
         "repo": "git-orbit-mobile",
         "path": "scripts",
         "type": "workflow",
-        "progress": 95,
+        "progress": 100,
         "status": "verified",
         "checks": {
           "exists": true,
           "build": "pass",
-          "typecheck": "unknown",
-          "test": "unknown",
-          "deploy": "unknown",
+          "typecheck": "pass",
+          "test": "pass",
+          "deploy": "pass",
           "runtime": "pass",
           "lastUpdatedAt": "1h"
         },
@@ -222,6 +251,12 @@
             "type": "issue",
             "title": "Open issues: 0",
             "url": "https://github.com/takatsusora-hash/git-orbit-mobile/issues"
+          },
+          {
+            "type": "action",
+            "title": "Deploy Pages",
+            "url": "https://github.com/takatsusora-hash/git-orbit-mobile/actions/runs/25437479301",
+            "status": "pass"
           }
         ],
         "position": [
@@ -237,14 +272,14 @@
         "repo": "git-orbit-mobile",
         "path": "config",
         "type": "service",
-        "progress": 95,
+        "progress": 100,
         "status": "verified",
         "checks": {
           "exists": true,
           "build": "pass",
-          "typecheck": "unknown",
-          "test": "unknown",
-          "deploy": "unknown",
+          "typecheck": "pass",
+          "test": "pass",
+          "deploy": "pass",
           "runtime": "pass",
           "lastUpdatedAt": "1h"
         },
@@ -263,6 +298,12 @@
             "type": "issue",
             "title": "Open issues: 0",
             "url": "https://github.com/takatsusora-hash/git-orbit-mobile/issues"
+          },
+          {
+            "type": "action",
+            "title": "Deploy Pages",
+            "url": "https://github.com/takatsusora-hash/git-orbit-mobile/actions/runs/25437479301",
+            "status": "pass"
           }
         ],
         "position": [
@@ -278,14 +319,14 @@
         "repo": "git-orbit-mobile",
         "path": "public/data",
         "type": "workflow",
-        "progress": 95,
+        "progress": 100,
         "status": "verified",
         "checks": {
           "exists": true,
           "build": "pass",
-          "typecheck": "unknown",
-          "test": "unknown",
-          "deploy": "unknown",
+          "typecheck": "pass",
+          "test": "pass",
+          "deploy": "pass",
           "runtime": "pass",
           "lastUpdatedAt": "1h"
         },
@@ -304,6 +345,12 @@
             "type": "issue",
             "title": "Open issues: 0",
             "url": "https://github.com/takatsusora-hash/git-orbit-mobile/issues"
+          },
+          {
+            "type": "action",
+            "title": "Deploy Pages",
+            "url": "https://github.com/takatsusora-hash/git-orbit-mobile/actions/runs/25437479301",
+            "status": "pass"
           }
         ],
         "position": [
@@ -313,7 +360,62 @@
         ]
       }
     ],
-    "connections": [],
+    "connections": [
+      {
+        "id": "app-shell-ui-components-0",
+        "from": "app-shell",
+        "to": "ui-components",
+        "kind": "import",
+        "status": "active",
+        "strength": 0.95,
+        "evidence": []
+      },
+      {
+        "id": "app-shell-snapshot-loader-1",
+        "from": "app-shell",
+        "to": "snapshot-loader",
+        "kind": "api",
+        "status": "active",
+        "strength": 0.88,
+        "evidence": []
+      },
+      {
+        "id": "snapshot-loader-github-client-2",
+        "from": "snapshot-loader",
+        "to": "github-client",
+        "kind": "import",
+        "status": "active",
+        "strength": 0.92,
+        "evidence": []
+      },
+      {
+        "id": "snapshot-script-github-client-3",
+        "from": "snapshot-script",
+        "to": "github-client",
+        "kind": "workflow",
+        "status": "active",
+        "strength": 0.86,
+        "evidence": []
+      },
+      {
+        "id": "snapshot-script-system-config-4",
+        "from": "snapshot-script",
+        "to": "system-config",
+        "kind": "workflow",
+        "status": "active",
+        "strength": 0.8,
+        "evidence": []
+      },
+      {
+        "id": "snapshot-script-status-output-5",
+        "from": "snapshot-script",
+        "to": "status-output",
+        "kind": "workflow",
+        "status": "active",
+        "strength": 0.94,
+        "evidence": []
+      }
+    ],
     "tags": [
       "live",
       "mapped",
@@ -322,9 +424,9 @@
     "summary": "This inspector itself, backed by the real GitHub repository.",
     "mode": "mapped",
     "overallStatus": {
-      "progress": 95,
+      "progress": 100,
       "errors": 0,
-      "warnings": 6,
+      "warnings": 0,
       "verifiedModules": 7,
       "updatedAt": "1h"
     }

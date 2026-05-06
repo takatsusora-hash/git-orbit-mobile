@@ -21,6 +21,12 @@ out/
 .npm/
 .next/
 tsconfig.tsbuildinfo
+android/.gradle/
+android/build/
+android/app/build/
+android/app/src/main/assets/www/
+android/local.properties
+.tooling/
 
 # Env / secrets
 .env

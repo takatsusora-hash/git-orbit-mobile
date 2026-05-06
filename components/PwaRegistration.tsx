@@ -9,6 +9,10 @@ export function PwaRegistration() {
       return;
     }
 
+    if (window.location.hostname === "appassets.androidplatform.net") {
+      return;
+    }
+
     navigator.serviceWorker.register(`${basePath}/sw.js`).catch(() => {
       // Best-effort registration; app still works without offline support.
     });

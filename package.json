@@ -8,6 +8,7 @@
     "snapshot": "node scripts/generate-snapshots.mjs",
     "build": "next build",
     "build:static": "npm run snapshot && next build",
+    "build:android-assets": "node scripts/build-android-assets.mjs",
     "start": "next start",
     "typecheck": "tsc --noEmit"
   },
