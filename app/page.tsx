@@ -10,16 +10,38 @@ export default async function HomePage() {
   return (
     <main className="shell">
       <div className="shell-inner">
-        <header className="page-header">
-          <div>
+        <section className="hero-grid">
+          <header className="panel hero-panel">
             <p className="eyebrow">Workspace</p>
             <h1 className="title">GitHub Systems In Orbit</h1>
             <p className="subtitle">
               GitHub の現物から取得した repo 状態を土台にして、接続定義があるシステムだけをマップ化します。
               定義のないものは live repo view として正直に表示します。
             </p>
-          </div>
-        </header>
+            <div className="hero-stats">
+              <div className="hero-stat">
+                <span className="meta-label">Systems</span>
+                <strong>{systems.length}</strong>
+              </div>
+              <div className="hero-stat">
+                <span className="meta-label">Accounts</span>
+                <strong>{accounts.length}</strong>
+              </div>
+              <div className="hero-stat">
+                <span className="meta-label">Mobile</span>
+                <strong>PWA</strong>
+              </div>
+            </div>
+          </header>
+
+          <aside className="panel hero-panel">
+            <p className="eyebrow">Phone Use</p>
+            <h2 style={{ margin: 0 }}>Install And Open Fast</h2>
+            <p className="subtitle">
+              スマホではブラウザから開いてホーム画面に追加できます。一覧は軽く、詳細だけ重く計算するので使い始めを速くしています。
+            </p>
+          </aside>
+        </section>
 
         <section className="account-grid">
           {accounts.map((account) => (

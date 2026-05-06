@@ -188,6 +188,34 @@ export function ThreeSystemMap({ system }: ThreeSystemMapProps) {
           </div>
         </div>
 
+        <p className="mobile-help">
+          スマホではマップ部分を横スクロールできます。細かい箱は下の一覧からでも選べます。
+        </p>
+
+        <div className="module-list">
+          {system.modules.map((module) => (
+            <button
+              className="module-list-item"
+              key={`list-${module.id}`}
+              onClick={() => setSelected(module)}
+              type="button"
+            >
+              <div className="module-card-head">
+                <div>
+                  <h3 className="module-card-title">{module.name}</h3>
+                  <div className="module-card-repo">{module.repo}</div>
+                </div>
+                <strong>{module.progress}%</strong>
+              </div>
+              <div className="module-card-checks">
+                <span>B {glyphForCheck(module.checks.build)}</span>
+                <span>T {glyphForCheck(module.checks.test)}</span>
+                <span>D {glyphForCheck(module.checks.deploy)}</span>
+              </div>
+            </button>
+          ))}
+        </div>
+
         <div className="legend-list">
           <div className="legend-item">
             <span>Active</span>
