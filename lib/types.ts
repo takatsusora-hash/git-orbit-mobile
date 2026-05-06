@@ -112,6 +112,7 @@ export type WorkspaceConfig = {
   accounts: Array<{
     id: string;
     name: string;
+    tokenEnv?: string;
   }>;
   systems: Array<{
     id: string;

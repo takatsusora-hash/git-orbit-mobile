@@ -1,7 +1,8 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ThreeSystemMap } from "@/components/ThreeSystemMap";
-import { loadSystem } from "@/lib/analyzer/statusGenerator";
+import workspaceConfig from "@/config/workspace.config.json";
+import { loadSystem } from "@/lib/data/snapshotLoader";
 import { ProgressGlyph } from "@/components/ProgressGlyph";
 
 type SystemViewerPageProps = {
@@ -9,6 +10,12 @@ type SystemViewerPageProps = {
     systemId: string;
   }>;
 };
+
+export function generateStaticParams() {
+  return workspaceConfig.systems.map((system) => ({
+    systemId: system.id,
+  }));
+}
 
 export default async function SystemViewerPage({
   params,

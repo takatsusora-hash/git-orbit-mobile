@@ -2,11 +2,13 @@
   "accounts": [
     {
       "id": "AETHER-CORE1219",
-      "name": "AETHER-CORE1219"
+      "name": "AETHER-CORE1219",
+      "tokenEnv": "GITHUB_TOKEN_AETHER_CORE1219"
     },
     {
       "id": "takatsusora-hash",
-      "name": "takatsusora-hash"
+      "name": "takatsusora-hash",
+      "tokenEnv": "GITHUB_TOKEN_TAKATSUSORA_HASH"
     }
   ],
   "systems": [

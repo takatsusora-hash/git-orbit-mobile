@@ -1,0 +1,209 @@
+{
+  "id": "genesis-core-v1",
+  "name": "genesis-core_v1",
+  "repos": [
+    {
+      "owner": "takatsusora-hash",
+      "name": "genesis-core_v1",
+      "branch": "main"
+    }
+  ],
+  "repoSnapshots": [
+    {
+      "owner": "takatsusora-hash",
+      "name": "genesis-core_v1",
+      "branch": "main",
+      "url": "https://github.com/takatsusora-hash/genesis-core_v1",
+      "isPrivate": false,
+      "updatedAt": "2026-05-01T02:10:58Z",
+      "pushedAt": "2026-05-01T03:41:43Z",
+      "defaultBranch": "main",
+      "openPullRequests": 1,
+      "openIssues": 0
+    }
+  ],
+  "modules": [
+    {
+      "id": "takatsusora-hash-genesis-core_v1-IMPLEMENTATION_PLAN.md-0",
+      "name": "IMPLEMENTATION_PLAN.md",
+      "systemId": "genesis-core-v1",
+      "repo": "genesis-core_v1",
+      "path": "IMPLEMENTATION_PLAN.md",
+      "type": "service",
+      "progress": 84,
+      "status": "implemented",
+      "checks": {
+        "exists": true,
+        "build": "pass",
+        "typecheck": "unknown",
+        "test": "unknown",
+        "deploy": "unknown",
+        "runtime": "unknown",
+        "lastUpdatedAt": "5d"
+      },
+      "evidence": [
+        {
+          "type": "artifact",
+          "title": "takatsusora-hash/genesis-core_v1",
+          "url": "https://github.com/takatsusora-hash/genesis-core_v1"
+        },
+        {
+          "type": "pr",
+          "title": "Open PRs: 1",
+          "url": "https://github.com/takatsusora-hash/genesis-core_v1/pulls",
+          "status": "open"
+        },
+        {
+          "type": "issue",
+          "title": "Open issues: 0",
+          "url": "https://github.com/takatsusora-hash/genesis-core_v1/issues"
+        }
+      ],
+      "position": [
+        2.3000000000000007,
+        2.5,
+        0.40000000000000036
+      ]
+    },
+    {
+      "id": "takatsusora-hash-genesis-core_v1-README.md-1",
+      "name": "README.md",
+      "systemId": "genesis-core-v1",
+      "repo": "genesis-core_v1",
+      "path": "README.md",
+      "type": "service",
+      "progress": 84,
+      "status": "implemented",
+      "checks": {
+        "exists": true,
+        "build": "pass",
+        "typecheck": "unknown",
+        "test": "unknown",
+        "deploy": "unknown",
+        "runtime": "unknown",
+        "lastUpdatedAt": "5d"
+      },
+      "evidence": [
+        {
+          "type": "artifact",
+          "title": "takatsusora-hash/genesis-core_v1",
+          "url": "https://github.com/takatsusora-hash/genesis-core_v1"
+        },
+        {
+          "type": "pr",
+          "title": "Open PRs: 1",
+          "url": "https://github.com/takatsusora-hash/genesis-core_v1/pulls",
+          "status": "open"
+        },
+        {
+          "type": "issue",
+          "title": "Open issues: 0",
+          "url": "https://github.com/takatsusora-hash/genesis-core_v1/issues"
+        }
+      ],
+      "position": [
+        6.1,
+        -0.5,
+        2.8
+      ]
+    },
+    {
+      "id": "takatsusora-hash-genesis-core_v1-TASKS.md-2",
+      "name": "TASKS.md",
+      "systemId": "genesis-core-v1",
+      "repo": "genesis-core_v1",
+      "path": "TASKS.md",
+      "type": "service",
+      "progress": 84,
+      "status": "implemented",
+      "checks": {
+        "exists": true,
+        "build": "pass",
+        "typecheck": "unknown",
+        "test": "unknown",
+        "deploy": "unknown",
+        "runtime": "unknown",
+        "lastUpdatedAt": "5d"
+      },
+      "evidence": [
+        {
+          "type": "artifact",
+          "title": "takatsusora-hash/genesis-core_v1",
+          "url": "https://github.com/takatsusora-hash/genesis-core_v1"
+        },
+        {
+          "type": "pr",
+          "title": "Open PRs: 1",
+          "url": "https://github.com/takatsusora-hash/genesis-core_v1/pulls",
+          "status": "open"
+        },
+        {
+          "type": "issue",
+          "title": "Open issues: 0",
+          "url": "https://github.com/takatsusora-hash/genesis-core_v1/issues"
+        }
+      ],
+      "position": [
+        9.9,
+        2.5,
+        5.2
+      ]
+    },
+    {
+      "id": "takatsusora-hash-genesis-core_v1-docs-3",
+      "name": "docs",
+      "systemId": "genesis-core-v1",
+      "repo": "genesis-core_v1",
+      "path": "docs",
+      "type": "service",
+      "progress": 84,
+      "status": "implemented",
+      "checks": {
+        "exists": true,
+        "build": "pass",
+        "typecheck": "unknown",
+        "test": "unknown",
+        "deploy": "unknown",
+        "runtime": "unknown",
+        "lastUpdatedAt": "5d"
+      },
+      "evidence": [
+        {
+          "type": "artifact",
+          "title": "takatsusora-hash/genesis-core_v1",
+          "url": "https://github.com/takatsusora-hash/genesis-core_v1"
+        },
+        {
+          "type": "pr",
+          "title": "Open PRs: 1",
+          "url": "https://github.com/takatsusora-hash/genesis-core_v1/pulls",
+          "status": "open"
+        },
+        {
+          "type": "issue",
+          "title": "Open issues: 0",
+          "url": "https://github.com/takatsusora-hash/genesis-core_v1/issues"
+        }
+      ],
+      "position": [
+        13.7,
+        -0.5,
+        7.6
+      ]
+    }
+  ],
+  "connections": [],
+  "tags": [
+    "live",
+    "public"
+  ],
+  "summary": "Live repository view from the takatsusora-hash account.",
+  "mode": "live",
+  "overallStatus": {
+    "progress": 84,
+    "errors": 0,
+    "warnings": 0,
+    "verifiedModules": 0,
+    "updatedAt": "5d"
+  }
+}

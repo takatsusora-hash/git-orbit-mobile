@@ -1,0 +1,661 @@
+[
+  {
+    "id": "git-orbit-mobile",
+    "name": "Git Orbit Mobile",
+    "repos": [
+      {
+        "owner": "takatsusora-hash",
+        "name": "git-orbit-mobile",
+        "branch": "main"
+      }
+    ],
+    "repoSnapshots": [
+      {
+        "owner": "takatsusora-hash",
+        "name": "git-orbit-mobile",
+        "branch": "main",
+        "url": "https://github.com/takatsusora-hash/git-orbit-mobile",
+        "isPrivate": true,
+        "updatedAt": "2026-05-06T12:54:27Z",
+        "pushedAt": "2026-05-06T12:54:23Z",
+        "defaultBranch": "main",
+        "openPullRequests": 0,
+        "openIssues": 0,
+        "primaryLanguage": "TypeScript"
+      }
+    ],
+    "modules": [
+      {
+        "id": "app-shell",
+        "name": "App Shell",
+        "systemId": "git-orbit-mobile",
+        "repo": "git-orbit-mobile",
+        "path": "app",
+        "type": "ui",
+        "progress": 95,
+        "status": "verified",
+        "checks": {
+          "exists": true,
+          "build": "pass",
+          "typecheck": "unknown",
+          "test": "unknown",
+          "deploy": "unknown",
+          "runtime": "pass",
+          "lastUpdatedAt": "1h"
+        },
+        "evidence": [
+          {
+            "type": "artifact",
+            "title": "takatsusora-hash/git-orbit-mobile",
+            "url": "https://github.com/takatsusora-hash/git-orbit-mobile"
+          },
+          {
+            "type": "pr",
+            "title": "Open PRs: 0",
+            "url": "https://github.com/takatsusora-hash/git-orbit-mobile/pulls"
+          },
+          {
+            "type": "issue",
+            "title": "Open issues: 0",
+            "url": "https://github.com/takatsusora-hash/git-orbit-mobile/issues"
+          }
+        ],
+        "position": [
+          -9.9,
+          2.5,
+          -5.2
+        ]
+      },
+      {
+        "id": "ui-components",
+        "name": "UI Components",
+        "systemId": "git-orbit-mobile",
+        "repo": "git-orbit-mobile",
+        "path": "components",
+        "type": "ui",
+        "progress": 95,
+        "status": "verified",
+        "checks": {
+          "exists": true,
+          "build": "pass",
+          "typecheck": "unknown",
+          "test": "unknown",
+          "deploy": "unknown",
+          "runtime": "pass",
+          "lastUpdatedAt": "1h"
+        },
+        "evidence": [
+          {
+            "type": "artifact",
+            "title": "takatsusora-hash/git-orbit-mobile",
+            "url": "https://github.com/takatsusora-hash/git-orbit-mobile"
+          },
+          {
+            "type": "pr",
+            "title": "Open PRs: 0",
+            "url": "https://github.com/takatsusora-hash/git-orbit-mobile/pulls"
+          },
+          {
+            "type": "issue",
+            "title": "Open issues: 0",
+            "url": "https://github.com/takatsusora-hash/git-orbit-mobile/issues"
+          }
+        ],
+        "position": [
+          -6.1,
+          -0.5,
+          -2.8
+        ]
+      },
+      {
+        "id": "snapshot-loader",
+        "name": "Snapshot Loader",
+        "systemId": "git-orbit-mobile",
+        "repo": "git-orbit-mobile",
+        "path": "lib/data",
+        "type": "api",
+        "progress": 95,
+        "status": "verified",
+        "checks": {
+          "exists": true,
+          "build": "pass",
+          "typecheck": "unknown",
+          "test": "unknown",
+          "deploy": "unknown",
+          "runtime": "pass",
+          "lastUpdatedAt": "1h"
+        },
+        "evidence": [
+          {
+            "type": "artifact",
+            "title": "takatsusora-hash/git-orbit-mobile",
+            "url": "https://github.com/takatsusora-hash/git-orbit-mobile"
+          },
+          {
+            "type": "pr",
+            "title": "Open PRs: 0",
+            "url": "https://github.com/takatsusora-hash/git-orbit-mobile/pulls"
+          },
+          {
+            "type": "issue",
+            "title": "Open issues: 0",
+            "url": "https://github.com/takatsusora-hash/git-orbit-mobile/issues"
+          }
+        ],
+        "position": [
+          0,
+          3.5,
+          0
+        ]
+      },
+      {
+        "id": "github-client",
+        "name": "GitHub Client",
+        "systemId": "git-orbit-mobile",
+        "repo": "git-orbit-mobile",
+        "path": "lib/github",
+        "type": "service",
+        "progress": 95,
+        "status": "verified",
+        "checks": {
+          "exists": true,
+          "build": "pass",
+          "typecheck": "unknown",
+          "test": "unknown",
+          "deploy": "unknown",
+          "runtime": "pass",
+          "lastUpdatedAt": "1h"
+        },
+        "evidence": [
+          {
+            "type": "artifact",
+            "title": "takatsusora-hash/git-orbit-mobile",
+            "url": "https://github.com/takatsusora-hash/git-orbit-mobile"
+          },
+          {
+            "type": "pr",
+            "title": "Open PRs: 0",
+            "url": "https://github.com/takatsusora-hash/git-orbit-mobile/pulls"
+          },
+          {
+            "type": "issue",
+            "title": "Open issues: 0",
+            "url": "https://github.com/takatsusora-hash/git-orbit-mobile/issues"
+          }
+        ],
+        "position": [
+          6.1,
+          2.5,
+          2.8
+        ]
+      },
+      {
+        "id": "snapshot-script",
+        "name": "Snapshot Generator",
+        "systemId": "git-orbit-mobile",
+        "repo": "git-orbit-mobile",
+        "path": "scripts",
+        "type": "workflow",
+        "progress": 95,
+        "status": "verified",
+        "checks": {
+          "exists": true,
+          "build": "pass",
+          "typecheck": "unknown",
+          "test": "unknown",
+          "deploy": "unknown",
+          "runtime": "pass",
+          "lastUpdatedAt": "1h"
+        },
+        "evidence": [
+          {
+            "type": "artifact",
+            "title": "takatsusora-hash/git-orbit-mobile",
+            "url": "https://github.com/takatsusora-hash/git-orbit-mobile"
+          },
+          {
+            "type": "pr",
+            "title": "Open PRs: 0",
+            "url": "https://github.com/takatsusora-hash/git-orbit-mobile/pulls"
+          },
+          {
+            "type": "issue",
+            "title": "Open issues: 0",
+            "url": "https://github.com/takatsusora-hash/git-orbit-mobile/issues"
+          }
+        ],
+        "position": [
+          -1.9,
+          9.5,
+          -13.2
+        ]
+      },
+      {
+        "id": "system-config",
+        "name": "System Config",
+        "systemId": "git-orbit-mobile",
+        "repo": "git-orbit-mobile",
+        "path": "config",
+        "type": "service",
+        "progress": 95,
+        "status": "verified",
+        "checks": {
+          "exists": true,
+          "build": "pass",
+          "typecheck": "unknown",
+          "test": "unknown",
+          "deploy": "unknown",
+          "runtime": "pass",
+          "lastUpdatedAt": "1h"
+        },
+        "evidence": [
+          {
+            "type": "artifact",
+            "title": "takatsusora-hash/git-orbit-mobile",
+            "url": "https://github.com/takatsusora-hash/git-orbit-mobile"
+          },
+          {
+            "type": "pr",
+            "title": "Open PRs: 0",
+            "url": "https://github.com/takatsusora-hash/git-orbit-mobile/pulls"
+          },
+          {
+            "type": "issue",
+            "title": "Open issues: 0",
+            "url": "https://github.com/takatsusora-hash/git-orbit-mobile/issues"
+          }
+        ],
+        "position": [
+          9.9,
+          -0.5,
+          5.2
+        ]
+      },
+      {
+        "id": "status-output",
+        "name": "Static Snapshot Output",
+        "systemId": "git-orbit-mobile",
+        "repo": "git-orbit-mobile",
+        "path": "public/data",
+        "type": "workflow",
+        "progress": 95,
+        "status": "verified",
+        "checks": {
+          "exists": true,
+          "build": "pass",
+          "typecheck": "unknown",
+          "test": "unknown",
+          "deploy": "unknown",
+          "runtime": "pass",
+          "lastUpdatedAt": "1h"
+        },
+        "evidence": [
+          {
+            "type": "artifact",
+            "title": "takatsusora-hash/git-orbit-mobile",
+            "url": "https://github.com/takatsusora-hash/git-orbit-mobile"
+          },
+          {
+            "type": "pr",
+            "title": "Open PRs: 0",
+            "url": "https://github.com/takatsusora-hash/git-orbit-mobile/pulls"
+          },
+          {
+            "type": "issue",
+            "title": "Open issues: 0",
+            "url": "https://github.com/takatsusora-hash/git-orbit-mobile/issues"
+          }
+        ],
+        "position": [
+          1.9,
+          6.5,
+          -10.8
+        ]
+      }
+    ],
+    "connections": [],
+    "tags": [
+      "live",
+      "mapped",
+      "local"
+    ],
+    "summary": "This inspector itself, backed by the real GitHub repository.",
+    "mode": "mapped",
+    "overallStatus": {
+      "progress": 95,
+      "errors": 0,
+      "warnings": 6,
+      "verifiedModules": 7,
+      "updatedAt": "1h"
+    }
+  },
+  {
+    "id": "genesis-core",
+    "name": "Genesis-Core",
+    "repos": [
+      {
+        "owner": "AETHER-CORE1219",
+        "name": "Genesis-Core"
+      }
+    ],
+    "repoSnapshots": [],
+    "modules": [
+      {
+        "id": "genesis-core-unavailable",
+        "name": "Snapshot Unavailable",
+        "systemId": "genesis-core",
+        "repo": "Genesis-Core",
+        "path": "snapshot",
+        "type": "workflow",
+        "progress": 8,
+        "status": "broken",
+        "checks": {
+          "exists": false,
+          "build": "fail",
+          "typecheck": "unknown",
+          "test": "unknown",
+          "deploy": "unknown",
+          "runtime": "unknown",
+          "lastUpdatedAt": "—"
+        },
+        "evidence": [
+          {
+            "type": "artifact",
+            "title": "GitHub API 404 for AETHER-CORE1219 /repos/AETHER-CORE1219/Genesis-Core",
+            "url": "https://github.com/AETHER-CORE1219",
+            "status": "fail"
+          }
+        ],
+        "position": [
+          0,
+          4,
+          0
+        ]
+      }
+    ],
+    "connections": [],
+    "tags": [
+      "live",
+      "private",
+      "snapshot-error"
+    ],
+    "summary": "Live repository view from the AETHER-CORE1219 account. Current token cannot read this repo or the repo path is wrong.",
+    "mode": "live",
+    "overallStatus": {
+      "progress": 8,
+      "errors": 1,
+      "warnings": 0,
+      "verifiedModules": 0,
+      "updatedAt": "—"
+    }
+  },
+  {
+    "id": "myproject",
+    "name": "Myproject",
+    "repos": [
+      {
+        "owner": "AETHER-CORE1219",
+        "name": "Myproject"
+      }
+    ],
+    "repoSnapshots": [],
+    "modules": [
+      {
+        "id": "myproject-unavailable",
+        "name": "Snapshot Unavailable",
+        "systemId": "myproject",
+        "repo": "Myproject",
+        "path": "snapshot",
+        "type": "workflow",
+        "progress": 8,
+        "status": "broken",
+        "checks": {
+          "exists": false,
+          "build": "fail",
+          "typecheck": "unknown",
+          "test": "unknown",
+          "deploy": "unknown",
+          "runtime": "unknown",
+          "lastUpdatedAt": "—"
+        },
+        "evidence": [
+          {
+            "type": "artifact",
+            "title": "GitHub API 404 for AETHER-CORE1219 /repos/AETHER-CORE1219/Myproject",
+            "url": "https://github.com/AETHER-CORE1219",
+            "status": "fail"
+          }
+        ],
+        "position": [
+          0,
+          4,
+          0
+        ]
+      }
+    ],
+    "connections": [],
+    "tags": [
+      "live",
+      "private",
+      "snapshot-error"
+    ],
+    "summary": "Live repository view from the AETHER-CORE1219 account. Current token cannot read this repo or the repo path is wrong.",
+    "mode": "live",
+    "overallStatus": {
+      "progress": 8,
+      "errors": 1,
+      "warnings": 0,
+      "verifiedModules": 0,
+      "updatedAt": "—"
+    }
+  },
+  {
+    "id": "genesis-core-v1",
+    "name": "genesis-core_v1",
+    "repos": [
+      {
+        "owner": "takatsusora-hash",
+        "name": "genesis-core_v1",
+        "branch": "main"
+      }
+    ],
+    "repoSnapshots": [
+      {
+        "owner": "takatsusora-hash",
+        "name": "genesis-core_v1",
+        "branch": "main",
+        "url": "https://github.com/takatsusora-hash/genesis-core_v1",
+        "isPrivate": false,
+        "updatedAt": "2026-05-01T02:10:58Z",
+        "pushedAt": "2026-05-01T03:41:43Z",
+        "defaultBranch": "main",
+        "openPullRequests": 1,
+        "openIssues": 0
+      }
+    ],
+    "modules": [
+      {
+        "id": "takatsusora-hash-genesis-core_v1-IMPLEMENTATION_PLAN.md-0",
+        "name": "IMPLEMENTATION_PLAN.md",
+        "systemId": "genesis-core-v1",
+        "repo": "genesis-core_v1",
+        "path": "IMPLEMENTATION_PLAN.md",
+        "type": "service",
+        "progress": 84,
+        "status": "implemented",
+        "checks": {
+          "exists": true,
+          "build": "pass",
+          "typecheck": "unknown",
+          "test": "unknown",
+          "deploy": "unknown",
+          "runtime": "unknown",
+          "lastUpdatedAt": "5d"
+        },
+        "evidence": [
+          {
+            "type": "artifact",
+            "title": "takatsusora-hash/genesis-core_v1",
+            "url": "https://github.com/takatsusora-hash/genesis-core_v1"
+          },
+          {
+            "type": "pr",
+            "title": "Open PRs: 1",
+            "url": "https://github.com/takatsusora-hash/genesis-core_v1/pulls",
+            "status": "open"
+          },
+          {
+            "type": "issue",
+            "title": "Open issues: 0",
+            "url": "https://github.com/takatsusora-hash/genesis-core_v1/issues"
+          }
+        ],
+        "position": [
+          2.3000000000000007,
+          2.5,
+          0.40000000000000036
+        ]
+      },
+      {
+        "id": "takatsusora-hash-genesis-core_v1-README.md-1",
+        "name": "README.md",
+        "systemId": "genesis-core-v1",
+        "repo": "genesis-core_v1",
+        "path": "README.md",
+        "type": "service",
+        "progress": 84,
+        "status": "implemented",
+        "checks": {
+          "exists": true,
+          "build": "pass",
+          "typecheck": "unknown",
+          "test": "unknown",
+          "deploy": "unknown",
+          "runtime": "unknown",
+          "lastUpdatedAt": "5d"
+        },
+        "evidence": [
+          {
+            "type": "artifact",
+            "title": "takatsusora-hash/genesis-core_v1",
+            "url": "https://github.com/takatsusora-hash/genesis-core_v1"
+          },
+          {
+            "type": "pr",
+            "title": "Open PRs: 1",
+            "url": "https://github.com/takatsusora-hash/genesis-core_v1/pulls",
+            "status": "open"
+          },
+          {
+            "type": "issue",
+            "title": "Open issues: 0",
+            "url": "https://github.com/takatsusora-hash/genesis-core_v1/issues"
+          }
+        ],
+        "position": [
+          6.1,
+          -0.5,
+          2.8
+        ]
+      },
+      {
+        "id": "takatsusora-hash-genesis-core_v1-TASKS.md-2",
+        "name": "TASKS.md",
+        "systemId": "genesis-core-v1",
+        "repo": "genesis-core_v1",
+        "path": "TASKS.md",
+        "type": "service",
+        "progress": 84,
+        "status": "implemented",
+        "checks": {
+          "exists": true,
+          "build": "pass",
+          "typecheck": "unknown",
+          "test": "unknown",
+          "deploy": "unknown",
+          "runtime": "unknown",
+          "lastUpdatedAt": "5d"
+        },
+        "evidence": [
+          {
+            "type": "artifact",
+            "title": "takatsusora-hash/genesis-core_v1",
+            "url": "https://github.com/takatsusora-hash/genesis-core_v1"
+          },
+          {
+            "type": "pr",
+            "title": "Open PRs: 1",
+            "url": "https://github.com/takatsusora-hash/genesis-core_v1/pulls",
+            "status": "open"
+          },
+          {
+            "type": "issue",
+            "title": "Open issues: 0",
+            "url": "https://github.com/takatsusora-hash/genesis-core_v1/issues"
+          }
+        ],
+        "position": [
+          9.9,
+          2.5,
+          5.2
+        ]
+      },
+      {
+        "id": "takatsusora-hash-genesis-core_v1-docs-3",
+        "name": "docs",
+        "systemId": "genesis-core-v1",
+        "repo": "genesis-core_v1",
+        "path": "docs",
+        "type": "service",
+        "progress": 84,
+        "status": "implemented",
+        "checks": {
+          "exists": true,
+          "build": "pass",
+          "typecheck": "unknown",
+          "test": "unknown",
+          "deploy": "unknown",
+          "runtime": "unknown",
+          "lastUpdatedAt": "5d"
+        },
+        "evidence": [
+          {
+            "type": "artifact",
+            "title": "takatsusora-hash/genesis-core_v1",
+            "url": "https://github.com/takatsusora-hash/genesis-core_v1"
+          },
+          {
+            "type": "pr",
+            "title": "Open PRs: 1",
+            "url": "https://github.com/takatsusora-hash/genesis-core_v1/pulls",
+            "status": "open"
+          },
+          {
+            "type": "issue",
+            "title": "Open issues: 0",
+            "url": "https://github.com/takatsusora-hash/genesis-core_v1/issues"
+          }
+        ],
+        "position": [
+          13.7,
+          -0.5,
+          7.6
+        ]
+      }
+    ],
+    "connections": [],
+    "tags": [
+      "live",
+      "public"
+    ],
+    "summary": "Live repository view from the takatsusora-hash account.",
+    "mode": "live",
+    "overallStatus": {
+      "progress": 84,
+      "errors": 0,
+      "warnings": 0,
+      "verifiedModules": 0,
+      "updatedAt": "5d"
+    }
+  }
+]

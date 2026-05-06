@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import { basePath } from "@/lib/site";
 
 export function PwaRegistration() {
   useEffect(() => {
@@ -8,7 +9,7 @@ export function PwaRegistration() {
       return;
     }
 
-    navigator.serviceWorker.register("/sw.js").catch(() => {
+    navigator.serviceWorker.register(`${basePath}/sw.js`).catch(() => {
       // Best-effort registration; app still works without offline support.
     });
   }, []);

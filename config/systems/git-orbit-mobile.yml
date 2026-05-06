@@ -23,25 +23,30 @@ modules:
     repo: git-orbit-mobile
     path: components
     type: ui
-  - id: analyzer
-    name: Analyzer
+  - id: snapshot-loader
+    name: Snapshot Loader
     repo: git-orbit-mobile
-    path: lib/analyzer
+    path: lib/data
     type: api
-  - id: github-live
-    name: GitHub Live Data
+  - id: github-client
+    name: GitHub Client
     repo: git-orbit-mobile
     path: lib/github
     type: service
+  - id: snapshot-script
+    name: Snapshot Generator
+    repo: git-orbit-mobile
+    path: scripts
+    type: workflow
   - id: system-config
     name: System Config
     repo: git-orbit-mobile
     path: config
     type: service
   - id: status-output
-    name: Status Output
+    name: Static Snapshot Output
     repo: git-orbit-mobile
-    path: public/status
+    path: public/data
     type: workflow
 
 connections:
@@ -50,18 +55,22 @@ connections:
     kind: import
     strength: 0.95
   - from: app-shell
-    to: analyzer
+    to: snapshot-loader
     kind: api
     strength: 0.88
-  - from: analyzer
-    to: github-live
+  - from: snapshot-loader
+    to: github-client
     kind: import
     strength: 0.92
-  - from: analyzer
+  - from: snapshot-script
+    to: github-client
+    kind: workflow
+    strength: 0.86
+  - from: snapshot-script
     to: system-config
-    kind: import
+    kind: workflow
     strength: 0.8
-  - from: analyzer
+  - from: snapshot-script
     to: status-output
     kind: workflow
-    strength: 0.72
+    strength: 0.94

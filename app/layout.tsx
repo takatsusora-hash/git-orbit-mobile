@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { PwaRegistration } from "@/components/PwaRegistration";
+import { withBasePath } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Git Orbit Mobile",
@@ -16,8 +17,8 @@ export const metadata: Metadata = {
     telephone: false,
   },
   icons: {
-    icon: "/icon.svg",
-    apple: "/apple-icon.svg",
+    icon: withBasePath("/icon.svg"),
+    apple: withBasePath("/apple-icon.svg"),
   },
 };
 

@@ -5,7 +5,9 @@
   "description": "Private mobile-first app concept for visualizing the development status of multiple GitHub accounts and repositories in 3D.",
   "scripts": {
     "dev": "next dev",
+    "snapshot": "node scripts/generate-snapshots.mjs",
     "build": "next build",
+    "build:static": "npm run snapshot && next build",
     "start": "next start",
     "typecheck": "tsc --noEmit"
   },
