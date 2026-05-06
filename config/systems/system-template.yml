@@ -1,0 +1,30 @@
+system:
+  id: your-system-id
+  name: Your System
+  summary: "Replace this with the system summary."
+  tags:
+    - live
+    - mapped
+
+repos:
+  - owner: your-github-owner
+    name: your-repo
+    branch: main
+
+modules:
+  - id: frontend
+    name: Frontend
+    repo: your-repo
+    path: app
+    type: ui
+  - id: backend
+    name: Backend
+    repo: your-repo
+    path: src/api
+    type: api
+
+connections:
+  - from: frontend
+    to: backend
+    kind: api
+    strength: 0.9

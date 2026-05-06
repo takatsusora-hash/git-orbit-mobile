@@ -1,23 +1,21 @@
 # Git Orbit Mobile
 
-Installable PWA for visualizing the current state of multiple GitHub systems as labeled modules and connections.
-
-Now also includes an Android app shell that bundles the exported app locally.
+Installable Android app for visualizing the current state of multiple GitHub systems as labeled modules and connections in a 3D scene.
 
 ## What It Is
 
-- Static-exported Next.js app
-- Mobile-first PWA that can be added to the home screen
+- Android app shell that bundles the exported UI locally
 - Snapshot-based build so the app opens quickly on phones
 - GitHub-backed status view with module boxes, connection lines, and evidence links
+- 3D scene rendered from static snapshots so the APK works without a hosted backend
 
 ## How It Works
 
 1. `scripts/generate-snapshots.mjs` reads GitHub and local overlay paths.
 2. It writes static JSON into `public/data/`.
 3. Next.js exports the app as static files.
-4. GitHub Pages serves the exported site.
-5. On a phone, the site can be installed from the browser as an app.
+4. The Android shell copies those files into APK assets.
+5. The Android app loads them locally through `WebViewAssetLoader`.
 
 ## Local Commands
 
@@ -44,8 +42,13 @@ What the Android shell does:
 
 Repeatable local flow:
 
-1. Build app assets with `node scripts/build-android-assets.mjs`
-2. Build the debug APK with Gradle from the local Android project
+1. Run `.\scripts\setup-android-tooling.ps1`
+2. Build app assets with `node scripts/build-android-assets.mjs`
+3. Build the debug APK with Gradle from the local Android project
+
+Full install steps:
+
+- [INSTALL-ANDROID.md](C:/Users/it11ataniguchi/Documents/New%20project/git-orbit-mobile/INSTALL-ANDROID.md)
 
 If `gh auth login` is already complete, snapshot generation can reuse that login. You can also provide tokens with:
 
@@ -55,18 +58,15 @@ $env:GITHUB_TOKEN_AETHER_CORE1219="..."
 $env:GITHUB_TOKEN_TAKATSUSORA_HASH="..."
 ```
 
-## GitHub Pages Deploy
+To add another visible system without editing JSON by hand:
 
-This repo includes `.github/workflows/deploy-pages.yml`.
+```powershell
+.\scripts\register-system.ps1 --name "Example System" --owner takatsusora-hash --repos git-orbit-mobile,genesis-core_v1
+```
 
-- Push to `main`
-- GitHub Actions generates fresh snapshot JSON
-- The app is exported to static files
-- GitHub Pages deploys the result
+## Optional Web Export
 
-Expected site URL:
-
-- [https://takatsusora-hash.github.io/git-orbit-mobile/](https://takatsusora-hash.github.io/git-orbit-mobile/)
+This repo still includes `.github/workflows/deploy-pages.yml` for optional browser previews, but the primary target is the Android APK.
 
 ## Required Repo Secrets
 

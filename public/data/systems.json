@@ -16,15 +16,15 @@
         "branch": "main",
         "url": "https://github.com/takatsusora-hash/git-orbit-mobile",
         "isPrivate": false,
-        "updatedAt": "2026-05-06T13:17:40Z",
-        "pushedAt": "2026-05-06T13:13:48Z",
+        "updatedAt": "2026-05-06T13:58:30Z",
+        "pushedAt": "2026-05-06T13:54:17Z",
         "defaultBranch": "main",
         "openPullRequests": 0,
         "openIssues": 0,
         "latestWorkflow": {
           "name": "Deploy Pages",
           "status": "pass",
-          "url": "https://github.com/takatsusora-hash/git-orbit-mobile/actions/runs/25437479301"
+          "url": "https://github.com/takatsusora-hash/git-orbit-mobile/actions/runs/25439654487"
         },
         "primaryLanguage": "TypeScript"
       }
@@ -67,7 +67,7 @@
           {
             "type": "action",
             "title": "Deploy Pages",
-            "url": "https://github.com/takatsusora-hash/git-orbit-mobile/actions/runs/25437479301",
+            "url": "https://github.com/takatsusora-hash/git-orbit-mobile/actions/runs/25439654487",
             "status": "pass"
           }
         ],
@@ -114,7 +114,7 @@
           {
             "type": "action",
             "title": "Deploy Pages",
-            "url": "https://github.com/takatsusora-hash/git-orbit-mobile/actions/runs/25437479301",
+            "url": "https://github.com/takatsusora-hash/git-orbit-mobile/actions/runs/25439654487",
             "status": "pass"
           }
         ],
@@ -161,7 +161,7 @@
           {
             "type": "action",
             "title": "Deploy Pages",
-            "url": "https://github.com/takatsusora-hash/git-orbit-mobile/actions/runs/25437479301",
+            "url": "https://github.com/takatsusora-hash/git-orbit-mobile/actions/runs/25439654487",
             "status": "pass"
           }
         ],
@@ -208,7 +208,7 @@
           {
             "type": "action",
             "title": "Deploy Pages",
-            "url": "https://github.com/takatsusora-hash/git-orbit-mobile/actions/runs/25437479301",
+            "url": "https://github.com/takatsusora-hash/git-orbit-mobile/actions/runs/25439654487",
             "status": "pass"
           }
         ],
@@ -255,7 +255,7 @@
           {
             "type": "action",
             "title": "Deploy Pages",
-            "url": "https://github.com/takatsusora-hash/git-orbit-mobile/actions/runs/25437479301",
+            "url": "https://github.com/takatsusora-hash/git-orbit-mobile/actions/runs/25439654487",
             "status": "pass"
           }
         ],
@@ -302,7 +302,7 @@
           {
             "type": "action",
             "title": "Deploy Pages",
-            "url": "https://github.com/takatsusora-hash/git-orbit-mobile/actions/runs/25437479301",
+            "url": "https://github.com/takatsusora-hash/git-orbit-mobile/actions/runs/25439654487",
             "status": "pass"
           }
         ],
@@ -349,7 +349,7 @@
           {
             "type": "action",
             "title": "Deploy Pages",
-            "url": "https://github.com/takatsusora-hash/git-orbit-mobile/actions/runs/25437479301",
+            "url": "https://github.com/takatsusora-hash/git-orbit-mobile/actions/runs/25439654487",
             "status": "pass"
           }
         ],
@@ -432,126 +432,6 @@
     }
   },
   {
-    "id": "genesis-core",
-    "name": "Genesis-Core",
-    "repos": [
-      {
-        "owner": "AETHER-CORE1219",
-        "name": "Genesis-Core"
-      }
-    ],
-    "repoSnapshots": [],
-    "modules": [
-      {
-        "id": "genesis-core-unavailable",
-        "name": "Snapshot Unavailable",
-        "systemId": "genesis-core",
-        "repo": "Genesis-Core",
-        "path": "snapshot",
-        "type": "workflow",
-        "progress": 8,
-        "status": "broken",
-        "checks": {
-          "exists": false,
-          "build": "fail",
-          "typecheck": "unknown",
-          "test": "unknown",
-          "deploy": "unknown",
-          "runtime": "unknown",
-          "lastUpdatedAt": "—"
-        },
-        "evidence": [
-          {
-            "type": "artifact",
-            "title": "GitHub API 404 for AETHER-CORE1219 /repos/AETHER-CORE1219/Genesis-Core",
-            "url": "https://github.com/AETHER-CORE1219",
-            "status": "fail"
-          }
-        ],
-        "position": [
-          0,
-          4,
-          0
-        ]
-      }
-    ],
-    "connections": [],
-    "tags": [
-      "live",
-      "private",
-      "snapshot-error"
-    ],
-    "summary": "Live repository view from the AETHER-CORE1219 account. Current token cannot read this repo or the repo path is wrong.",
-    "mode": "live",
-    "overallStatus": {
-      "progress": 8,
-      "errors": 1,
-      "warnings": 0,
-      "verifiedModules": 0,
-      "updatedAt": "—"
-    }
-  },
-  {
-    "id": "myproject",
-    "name": "Myproject",
-    "repos": [
-      {
-        "owner": "AETHER-CORE1219",
-        "name": "Myproject"
-      }
-    ],
-    "repoSnapshots": [],
-    "modules": [
-      {
-        "id": "myproject-unavailable",
-        "name": "Snapshot Unavailable",
-        "systemId": "myproject",
-        "repo": "Myproject",
-        "path": "snapshot",
-        "type": "workflow",
-        "progress": 8,
-        "status": "broken",
-        "checks": {
-          "exists": false,
-          "build": "fail",
-          "typecheck": "unknown",
-          "test": "unknown",
-          "deploy": "unknown",
-          "runtime": "unknown",
-          "lastUpdatedAt": "—"
-        },
-        "evidence": [
-          {
-            "type": "artifact",
-            "title": "GitHub API 404 for AETHER-CORE1219 /repos/AETHER-CORE1219/Myproject",
-            "url": "https://github.com/AETHER-CORE1219",
-            "status": "fail"
-          }
-        ],
-        "position": [
-          0,
-          4,
-          0
-        ]
-      }
-    ],
-    "connections": [],
-    "tags": [
-      "live",
-      "private",
-      "snapshot-error"
-    ],
-    "summary": "Live repository view from the AETHER-CORE1219 account. Current token cannot read this repo or the repo path is wrong.",
-    "mode": "live",
-    "overallStatus": {
-      "progress": 8,
-      "errors": 1,
-      "warnings": 0,
-      "verifiedModules": 0,
-      "updatedAt": "—"
-    }
-  },
-  {
     "id": "genesis-core-v1",
     "name": "genesis-core_v1",
     "repos": [
@@ -592,7 +472,7 @@
           "test": "unknown",
           "deploy": "unknown",
           "runtime": "unknown",
-          "lastUpdatedAt": "5d"
+          "lastUpdatedAt": "6d"
         },
         "evidence": [
           {
@@ -634,7 +514,7 @@
           "test": "unknown",
           "deploy": "unknown",
           "runtime": "unknown",
-          "lastUpdatedAt": "5d"
+          "lastUpdatedAt": "6d"
         },
         "evidence": [
           {
@@ -676,7 +556,7 @@
           "test": "unknown",
           "deploy": "unknown",
           "runtime": "unknown",
-          "lastUpdatedAt": "5d"
+          "lastUpdatedAt": "6d"
         },
         "evidence": [
           {
@@ -718,7 +598,7 @@
           "test": "unknown",
           "deploy": "unknown",
           "runtime": "unknown",
-          "lastUpdatedAt": "5d"
+          "lastUpdatedAt": "6d"
         },
         "evidence": [
           {
@@ -757,7 +637,7 @@
       "errors": 0,
       "warnings": 0,
       "verifiedModules": 0,
-      "updatedAt": "5d"
+      "updatedAt": "6d"
     }
   }
 ]

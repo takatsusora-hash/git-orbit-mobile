@@ -15,15 +15,15 @@
       "branch": "main",
       "url": "https://github.com/takatsusora-hash/git-orbit-mobile",
       "isPrivate": false,
-      "updatedAt": "2026-05-06T13:17:40Z",
-      "pushedAt": "2026-05-06T13:13:48Z",
+      "updatedAt": "2026-05-06T13:58:30Z",
+      "pushedAt": "2026-05-06T13:54:17Z",
       "defaultBranch": "main",
       "openPullRequests": 0,
       "openIssues": 0,
       "latestWorkflow": {
         "name": "Deploy Pages",
         "status": "pass",
-        "url": "https://github.com/takatsusora-hash/git-orbit-mobile/actions/runs/25437479301"
+        "url": "https://github.com/takatsusora-hash/git-orbit-mobile/actions/runs/25439654487"
       },
       "primaryLanguage": "TypeScript"
     }
@@ -66,7 +66,7 @@
         {
           "type": "action",
           "title": "Deploy Pages",
-          "url": "https://github.com/takatsusora-hash/git-orbit-mobile/actions/runs/25437479301",
+          "url": "https://github.com/takatsusora-hash/git-orbit-mobile/actions/runs/25439654487",
           "status": "pass"
         }
       ],
@@ -113,7 +113,7 @@
         {
           "type": "action",
           "title": "Deploy Pages",
-          "url": "https://github.com/takatsusora-hash/git-orbit-mobile/actions/runs/25437479301",
+          "url": "https://github.com/takatsusora-hash/git-orbit-mobile/actions/runs/25439654487",
           "status": "pass"
         }
       ],
@@ -160,7 +160,7 @@
         {
           "type": "action",
           "title": "Deploy Pages",
-          "url": "https://github.com/takatsusora-hash/git-orbit-mobile/actions/runs/25437479301",
+          "url": "https://github.com/takatsusora-hash/git-orbit-mobile/actions/runs/25439654487",
           "status": "pass"
         }
       ],
@@ -207,7 +207,7 @@
         {
           "type": "action",
           "title": "Deploy Pages",
-          "url": "https://github.com/takatsusora-hash/git-orbit-mobile/actions/runs/25437479301",
+          "url": "https://github.com/takatsusora-hash/git-orbit-mobile/actions/runs/25439654487",
           "status": "pass"
         }
       ],
@@ -254,7 +254,7 @@
         {
           "type": "action",
           "title": "Deploy Pages",
-          "url": "https://github.com/takatsusora-hash/git-orbit-mobile/actions/runs/25437479301",
+          "url": "https://github.com/takatsusora-hash/git-orbit-mobile/actions/runs/25439654487",
           "status": "pass"
         }
       ],
@@ -301,7 +301,7 @@
         {
           "type": "action",
           "title": "Deploy Pages",
-          "url": "https://github.com/takatsusora-hash/git-orbit-mobile/actions/runs/25437479301",
+          "url": "https://github.com/takatsusora-hash/git-orbit-mobile/actions/runs/25439654487",
           "status": "pass"
         }
       ],
@@ -348,7 +348,7 @@
         {
           "type": "action",
           "title": "Deploy Pages",
-          "url": "https://github.com/takatsusora-hash/git-orbit-mobile/actions/runs/25437479301",
+          "url": "https://github.com/takatsusora-hash/git-orbit-mobile/actions/runs/25439654487",
           "status": "pass"
         }
       ],

@@ -6,9 +6,13 @@
   "scripts": {
     "dev": "next dev",
     "snapshot": "node scripts/generate-snapshots.mjs",
+    "setup:android": "powershell -ExecutionPolicy Bypass -File .\\scripts\\setup-android-tooling.ps1",
     "build": "next build",
     "build:static": "npm run snapshot && next build",
     "build:android-assets": "node scripts/build-android-assets.mjs",
+    "build:apk": "powershell -ExecutionPolicy Bypass -File .\\scripts\\build-android-apk.ps1",
+    "install:android": "powershell -ExecutionPolicy Bypass -File .\\scripts\\install-android-apk.ps1",
+    "register:system": "node scripts/register-system.mjs",
     "start": "next start",
     "typecheck": "tsc --noEmit"
   },

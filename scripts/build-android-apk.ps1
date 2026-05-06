@@ -12,7 +12,7 @@ if (-not (Test-Path $runtimeNode)) {
 }
 
 if (-not (Test-Path $gradle)) {
-  throw "Gradle tooling was not found. Set up .tooling first."
+  throw "Gradle tooling was not found. Run .\scripts\setup-android-tooling.ps1 first."
 }
 
 $env:JAVA_HOME = $jdkHome
