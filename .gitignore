@@ -18,6 +18,8 @@ node_modules/
 dist/
 build/
 .npm/
+.next/
+tsconfig.tsbuildinfo
 
 # Env / secrets
 .env

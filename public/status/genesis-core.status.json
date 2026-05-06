@@ -1,0 +1,225 @@
+{
+  "systemId": "genesis-core",
+  "updatedAt": "1h",
+  "modules": [
+    {
+      "id": "frontend",
+      "progressSignals": {
+        "pathExists": true,
+        "keyFiles": true,
+        "linkedWork": true,
+        "mergedToMain": true,
+        "build": "pass",
+        "typecheck": "pass",
+        "test": "pass",
+        "deploy": "unknown",
+        "runtime": "pass"
+      },
+      "checks": {
+        "exists": true,
+        "build": "pass",
+        "typecheck": "pass",
+        "test": "pass",
+        "deploy": "unknown",
+        "runtime": "pass",
+        "lastUpdatedAt": "1h"
+      },
+      "evidence": [
+        {
+          "type": "commit",
+          "title": "UI orbit layout refinement",
+          "url": "https://github.com/takatsusora-hash/git-orbit-mobile/commit/main",
+          "status": "pass",
+          "createdAt": "2026-05-06T08:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "api",
+      "progressSignals": {
+        "pathExists": true,
+        "keyFiles": true,
+        "linkedWork": true,
+        "mergedToMain": true,
+        "build": "pass",
+        "typecheck": "pass",
+        "test": "pass",
+        "deploy": "pass",
+        "runtime": "pass"
+      },
+      "checks": {
+        "exists": true,
+        "build": "pass",
+        "typecheck": "pass",
+        "test": "pass",
+        "deploy": "pass",
+        "runtime": "pass",
+        "lastUpdatedAt": "42m"
+      },
+      "evidence": [
+        {
+          "type": "pr",
+          "title": "API status sync merged",
+          "url": "https://github.com/takatsusora-hash/git-orbit-mobile/pulls",
+          "status": "merged",
+          "createdAt": "2026-05-06T07:22:00Z"
+        }
+      ]
+    },
+    {
+      "id": "analysis",
+      "progressSignals": {
+        "pathExists": true,
+        "keyFiles": true,
+        "linkedWork": true,
+        "mergedToMain": true,
+        "build": "pass",
+        "typecheck": "pass",
+        "test": "unknown",
+        "deploy": "unknown",
+        "runtime": "unknown"
+      },
+      "checks": {
+        "exists": true,
+        "build": "pass",
+        "typecheck": "pass",
+        "test": "unknown",
+        "deploy": "unknown",
+        "runtime": "unknown",
+        "lastUpdatedAt": "2h"
+      },
+      "evidence": [
+        {
+          "type": "issue",
+          "title": "Need smoke verification for analysis engine",
+          "url": "https://github.com/takatsusora-hash/git-orbit-mobile/issues",
+          "status": "open",
+          "createdAt": "2026-05-06T05:18:00Z"
+        }
+      ]
+    },
+    {
+      "id": "pdf",
+      "progressSignals": {
+        "pathExists": true,
+        "keyFiles": true,
+        "linkedWork": true,
+        "mergedToMain": false,
+        "build": "pass",
+        "typecheck": "pass",
+        "test": "fail",
+        "deploy": "pass",
+        "runtime": "unknown"
+      },
+      "checks": {
+        "exists": true,
+        "build": "pass",
+        "typecheck": "pass",
+        "test": "fail",
+        "deploy": "pass",
+        "runtime": "unknown",
+        "lastUpdatedAt": "3h"
+      },
+      "evidence": [
+        {
+          "type": "action",
+          "title": "PDF regression suite failed",
+          "url": "https://github.com/takatsusora-hash/git-orbit-mobile/actions",
+          "status": "fail",
+          "createdAt": "2026-05-06T04:11:00Z"
+        }
+      ]
+    },
+    {
+      "id": "email",
+      "progressSignals": {
+        "pathExists": true,
+        "keyFiles": false,
+        "linkedWork": true,
+        "mergedToMain": false,
+        "build": "unknown",
+        "typecheck": "unknown",
+        "test": "unknown",
+        "deploy": "pass",
+        "runtime": "unknown"
+      },
+      "checks": {
+        "exists": true,
+        "build": "unknown",
+        "typecheck": "unknown",
+        "test": "unknown",
+        "deploy": "pass",
+        "runtime": "unknown",
+        "lastUpdatedAt": "5h"
+      },
+      "evidence": [
+        {
+          "type": "deploy",
+          "title": "Email dispatch workflow available",
+          "url": "https://github.com/takatsusora-hash/git-orbit-mobile/actions",
+          "status": "pass",
+          "createdAt": "2026-05-06T02:10:00Z"
+        }
+      ]
+    },
+    {
+      "id": "auth",
+      "progressSignals": {
+        "pathExists": true,
+        "keyFiles": true,
+        "linkedWork": false,
+        "mergedToMain": true,
+        "build": "pass",
+        "typecheck": "pass",
+        "test": "pass",
+        "deploy": "unknown",
+        "runtime": "pass"
+      },
+      "checks": {
+        "exists": true,
+        "build": "pass",
+        "typecheck": "pass",
+        "test": "pass",
+        "deploy": "unknown",
+        "runtime": "pass",
+        "lastUpdatedAt": "6h"
+      },
+      "evidence": [
+        {
+          "type": "artifact",
+          "title": "Auth env snapshot",
+          "url": "https://github.com/takatsusora-hash/git-orbit-mobile/actions",
+          "status": "pass",
+          "createdAt": "2026-05-06T01:20:00Z"
+        }
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "from": "frontend",
+      "to": "api",
+      "status": "active"
+    },
+    {
+      "from": "api",
+      "to": "analysis",
+      "status": "active"
+    },
+    {
+      "from": "analysis",
+      "to": "pdf",
+      "status": "untested"
+    },
+    {
+      "from": "pdf",
+      "to": "email",
+      "status": "broken"
+    },
+    {
+      "from": "frontend",
+      "to": "auth",
+      "status": "active"
+    }
+  ]
+}

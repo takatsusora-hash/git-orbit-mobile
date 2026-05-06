@@ -1,0 +1,67 @@
+system:
+  id: git-orbit-mobile
+  name: Git Orbit Mobile
+  summary: "This inspector itself, backed by the real GitHub repository."
+  tags:
+    - live
+    - mapped
+    - local
+
+repos:
+  - owner: takatsusora-hash
+    name: git-orbit-mobile
+    branch: main
+
+modules:
+  - id: app-shell
+    name: App Shell
+    repo: git-orbit-mobile
+    path: app
+    type: ui
+  - id: ui-components
+    name: UI Components
+    repo: git-orbit-mobile
+    path: components
+    type: ui
+  - id: analyzer
+    name: Analyzer
+    repo: git-orbit-mobile
+    path: lib/analyzer
+    type: api
+  - id: github-live
+    name: GitHub Live Data
+    repo: git-orbit-mobile
+    path: lib/github
+    type: service
+  - id: system-config
+    name: System Config
+    repo: git-orbit-mobile
+    path: config
+    type: service
+  - id: status-output
+    name: Status Output
+    repo: git-orbit-mobile
+    path: public/status
+    type: workflow
+
+connections:
+  - from: app-shell
+    to: ui-components
+    kind: import
+    strength: 0.95
+  - from: app-shell
+    to: analyzer
+    kind: api
+    strength: 0.88
+  - from: analyzer
+    to: github-live
+    kind: import
+    strength: 0.92
+  - from: analyzer
+    to: system-config
+    kind: import
+    strength: 0.8
+  - from: analyzer
+    to: status-output
+    kind: workflow
+    strength: 0.72

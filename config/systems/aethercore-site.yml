@@ -1,0 +1,58 @@
+system:
+  id: aethercore-site
+  name: AETHERCORE Site
+  summary: "Public site and content delivery surface."
+  tags:
+    - site
+    - marketing
+    - single-repo
+
+repos:
+  - owner: takatsusora-hash
+    name: aethercore-site
+    branch: main
+
+modules:
+  - id: site-ui
+    name: Site UI
+    repo: aethercore-site
+    path: app
+    type: ui
+  - id: site-api
+    name: Site API
+    repo: aethercore-site
+    path: app/api
+    type: api
+  - id: cms
+    name: CMS Bridge
+    repo: aethercore-site
+    path: lib/cms
+    type: service
+  - id: analytics
+    name: Analytics
+    repo: aethercore-site
+    path: lib/analytics
+    type: external
+  - id: deploy
+    name: Deploy Workflow
+    repo: aethercore-site
+    path: .github/workflows/deploy.yml
+    type: workflow
+
+connections:
+  - from: site-ui
+    to: site-api
+    kind: api
+    strength: 0.9
+  - from: site-api
+    to: cms
+    kind: import
+    strength: 0.78
+  - from: site-ui
+    to: analytics
+    kind: external
+    strength: 0.72
+  - from: site-api
+    to: deploy
+    kind: deploy
+    strength: 0.6

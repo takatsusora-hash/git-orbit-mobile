@@ -1,0 +1,219 @@
+{
+  "systemId": "synapsai",
+  "updatedAt": "2h",
+  "modules": [
+    {
+      "id": "dashboard",
+      "progressSignals": {
+        "pathExists": true,
+        "keyFiles": true,
+        "linkedWork": true,
+        "mergedToMain": true,
+        "build": "pass",
+        "typecheck": "pass",
+        "test": "pass",
+        "deploy": "unknown",
+        "runtime": "pass"
+      },
+      "checks": {
+        "exists": true,
+        "build": "pass",
+        "typecheck": "pass",
+        "test": "pass",
+        "deploy": "unknown",
+        "runtime": "pass",
+        "lastUpdatedAt": "2h"
+      },
+      "evidence": [
+        {
+          "type": "commit",
+          "title": "Dashboard telemetry polish",
+          "url": "https://github.com/takatsusora-hash/git-orbit-mobile/commit/main",
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "id": "orchestrator",
+      "progressSignals": {
+        "pathExists": true,
+        "keyFiles": true,
+        "linkedWork": true,
+        "mergedToMain": true,
+        "build": "pass",
+        "typecheck": "pass",
+        "test": "pass",
+        "deploy": "pass",
+        "runtime": "pass"
+      },
+      "checks": {
+        "exists": true,
+        "build": "pass",
+        "typecheck": "pass",
+        "test": "pass",
+        "deploy": "pass",
+        "runtime": "pass",
+        "lastUpdatedAt": "1h"
+      },
+      "evidence": [
+        {
+          "type": "pr",
+          "title": "Orchestrator queue merge",
+          "url": "https://github.com/takatsusora-hash/git-orbit-mobile/pulls",
+          "status": "merged"
+        }
+      ]
+    },
+    {
+      "id": "inference",
+      "progressSignals": {
+        "pathExists": true,
+        "keyFiles": true,
+        "linkedWork": true,
+        "mergedToMain": false,
+        "build": "pass",
+        "typecheck": "pass",
+        "test": "unknown",
+        "deploy": "unknown",
+        "runtime": "unknown"
+      },
+      "checks": {
+        "exists": true,
+        "build": "pass",
+        "typecheck": "pass",
+        "test": "unknown",
+        "deploy": "unknown",
+        "runtime": "unknown",
+        "lastUpdatedAt": "3h"
+      },
+      "evidence": [
+        {
+          "type": "issue",
+          "title": "Inference smoke run pending",
+          "url": "https://github.com/takatsusora-hash/git-orbit-mobile/issues",
+          "status": "open"
+        }
+      ]
+    },
+    {
+      "id": "vector-db",
+      "progressSignals": {
+        "pathExists": true,
+        "keyFiles": true,
+        "linkedWork": false,
+        "mergedToMain": false,
+        "build": "unknown",
+        "typecheck": "unknown",
+        "test": "unknown",
+        "deploy": "unknown",
+        "runtime": "unknown"
+      },
+      "checks": {
+        "exists": true,
+        "build": "unknown",
+        "typecheck": "unknown",
+        "test": "unknown",
+        "deploy": "unknown",
+        "runtime": "unknown",
+        "lastUpdatedAt": "10h"
+      },
+      "evidence": [
+        {
+          "type": "artifact",
+          "title": "Vector DB topology snapshot",
+          "url": "https://github.com/takatsusora-hash/git-orbit-mobile/actions",
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "id": "agents",
+      "progressSignals": {
+        "pathExists": true,
+        "keyFiles": true,
+        "linkedWork": true,
+        "mergedToMain": true,
+        "build": "pass",
+        "typecheck": "pass",
+        "test": "pass",
+        "deploy": "unknown",
+        "runtime": "pass"
+      },
+      "checks": {
+        "exists": true,
+        "build": "pass",
+        "typecheck": "pass",
+        "test": "pass",
+        "deploy": "unknown",
+        "runtime": "pass",
+        "lastUpdatedAt": "4h"
+      },
+      "evidence": [
+        {
+          "type": "commit",
+          "title": "Agent routing update",
+          "url": "https://github.com/takatsusora-hash/git-orbit-mobile/commit/main",
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "id": "ci",
+      "progressSignals": {
+        "pathExists": true,
+        "keyFiles": true,
+        "linkedWork": true,
+        "mergedToMain": true,
+        "build": "pass",
+        "typecheck": "unknown",
+        "test": "pass",
+        "deploy": "pass",
+        "runtime": "unknown"
+      },
+      "checks": {
+        "exists": true,
+        "build": "pass",
+        "typecheck": "unknown",
+        "test": "pass",
+        "deploy": "pass",
+        "runtime": "unknown",
+        "lastUpdatedAt": "2h"
+      },
+      "evidence": [
+        {
+          "type": "action",
+          "title": "Agent CI passing",
+          "url": "https://github.com/takatsusora-hash/git-orbit-mobile/actions",
+          "status": "pass"
+        }
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "from": "dashboard",
+      "to": "orchestrator",
+      "status": "active"
+    },
+    {
+      "from": "orchestrator",
+      "to": "inference",
+      "status": "active"
+    },
+    {
+      "from": "orchestrator",
+      "to": "vector-db",
+      "status": "planned"
+    },
+    {
+      "from": "inference",
+      "to": "agents",
+      "status": "untested"
+    },
+    {
+      "from": "agents",
+      "to": "ci",
+      "status": "active"
+    }
+  ]
+}

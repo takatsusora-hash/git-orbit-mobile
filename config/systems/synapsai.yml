@@ -1,0 +1,70 @@
+system:
+  id: synapsai
+  name: SynapsAI
+  summary: "Agent and inference orchestration layer."
+  tags:
+    - ml
+    - agents
+    - research
+
+repos:
+  - owner: takatsusora-hash
+    name: synapsai-core
+    branch: main
+  - owner: takatsusora-hash
+    name: synapsai-agents
+    branch: main
+
+modules:
+  - id: dashboard
+    name: Dashboard
+    repo: synapsai-core
+    path: apps/dashboard
+    type: ui
+  - id: orchestrator
+    name: Orchestrator
+    repo: synapsai-core
+    path: services/orchestrator
+    type: api
+  - id: inference
+    name: Inference
+    repo: synapsai-core
+    path: services/inference
+    type: service
+  - id: vector-db
+    name: Vector DB
+    repo: synapsai-core
+    path: infra/vector-db
+    type: db
+  - id: agents
+    name: Agents
+    repo: synapsai-agents
+    path: packages/agents
+    type: service
+  - id: ci
+    name: CI Workflow
+    repo: synapsai-agents
+    path: .github/workflows/ci.yml
+    type: workflow
+
+connections:
+  - from: dashboard
+    to: orchestrator
+    kind: api
+    strength: 0.95
+  - from: orchestrator
+    to: inference
+    kind: import
+    strength: 0.88
+  - from: orchestrator
+    to: vector-db
+    kind: db
+    strength: 0.8
+  - from: inference
+    to: agents
+    kind: import
+    strength: 0.77
+  - from: agents
+    to: ci
+    kind: workflow
+    strength: 0.64

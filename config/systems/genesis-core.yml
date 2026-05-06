@@ -1,0 +1,74 @@
+system:
+  id: genesis-core
+  name: GenesisCore
+  summary: "Core orchestration and report generation system."
+  tags:
+    - core
+    - analysis
+    - multi-repo
+
+repos:
+  - owner: takatsusora-hash
+    name: genesis-core-production
+    branch: main
+  - owner: takatsusora-hash
+    name: genesis-core-workflows
+    branch: main
+
+modules:
+  - id: frontend
+    name: Frontend
+    repo: genesis-core-production
+    path: apps/web
+    type: ui
+  - id: api
+    name: API
+    repo: genesis-core-production
+    path: apps/web/src/app/api
+    type: api
+  - id: analysis
+    name: Analysis Engine
+    repo: genesis-core-production
+    path: packages/analysis-engine
+    type: service
+  - id: pdf
+    name: PDF Generator
+    repo: genesis-core-production
+    path: packages/pdf
+    type: service
+  - id: email
+    name: Email
+    repo: genesis-core-workflows
+    path: workflows/email
+    type: workflow
+  - id: auth
+    name: Auth
+    repo: genesis-core-production
+    path: packages/auth
+    type: external
+
+connections:
+  - from: frontend
+    to: api
+    kind: api
+    strength: 1
+    evidence:
+      - type: pr
+        title: "/api/analyze integration"
+        url: https://github.com/takatsusora-hash/git-orbit-mobile/pulls
+  - from: api
+    to: analysis
+    kind: import
+    strength: 0.92
+  - from: analysis
+    to: pdf
+    kind: workflow
+    strength: 0.86
+  - from: pdf
+    to: email
+    kind: deploy
+    strength: 0.8
+  - from: frontend
+    to: auth
+    kind: external
+    strength: 0.7

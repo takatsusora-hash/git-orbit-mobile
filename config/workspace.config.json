@@ -1,0 +1,48 @@
+{
+  "accounts": [
+    {
+      "id": "AETHER-CORE1219",
+      "name": "AETHER-CORE1219"
+    },
+    {
+      "id": "takatsusora-hash",
+      "name": "takatsusora-hash"
+    }
+  ],
+  "systems": [
+    {
+      "id": "git-orbit-mobile",
+      "name": "Git Orbit Mobile",
+      "owner": "takatsusora-hash",
+      "repos": ["git-orbit-mobile"],
+      "localPath": ".",
+      "mapFile": "git-orbit-mobile.yml",
+      "tags": ["live", "mapped", "local"],
+      "summary": "This inspector itself, backed by the real GitHub repository."
+    },
+    {
+      "id": "genesis-core",
+      "name": "Genesis-Core",
+      "owner": "AETHER-CORE1219",
+      "repos": ["Genesis-Core"],
+      "tags": ["live", "private"],
+      "summary": "Live repository view from the AETHER-CORE1219 account."
+    },
+    {
+      "id": "myproject",
+      "name": "Myproject",
+      "owner": "AETHER-CORE1219",
+      "repos": ["Myproject"],
+      "tags": ["live", "private"],
+      "summary": "Live repository view from the AETHER-CORE1219 account."
+    },
+    {
+      "id": "genesis-core-v1",
+      "name": "genesis-core_v1",
+      "owner": "takatsusora-hash",
+      "repos": ["genesis-core_v1"],
+      "tags": ["live", "public"],
+      "summary": "Live repository view from the takatsusora-hash account."
+    }
+  ]
+}

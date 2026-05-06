@@ -1,0 +1,183 @@
+{
+  "systemId": "aethercore-site",
+  "updatedAt": "4h",
+  "modules": [
+    {
+      "id": "site-ui",
+      "progressSignals": {
+        "pathExists": true,
+        "keyFiles": true,
+        "linkedWork": true,
+        "mergedToMain": true,
+        "build": "pass",
+        "typecheck": "pass",
+        "test": "pass",
+        "deploy": "pass",
+        "runtime": "pass"
+      },
+      "checks": {
+        "exists": true,
+        "build": "pass",
+        "typecheck": "pass",
+        "test": "pass",
+        "deploy": "pass",
+        "runtime": "pass",
+        "lastUpdatedAt": "4h"
+      },
+      "evidence": [
+        {
+          "type": "deploy",
+          "title": "Production site healthy",
+          "url": "https://github.com/takatsusora-hash/git-orbit-mobile/actions",
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "id": "site-api",
+      "progressSignals": {
+        "pathExists": true,
+        "keyFiles": true,
+        "linkedWork": true,
+        "mergedToMain": true,
+        "build": "pass",
+        "typecheck": "pass",
+        "test": "pass",
+        "deploy": "pass",
+        "runtime": "pass"
+      },
+      "checks": {
+        "exists": true,
+        "build": "pass",
+        "typecheck": "pass",
+        "test": "pass",
+        "deploy": "pass",
+        "runtime": "pass",
+        "lastUpdatedAt": "3h"
+      },
+      "evidence": [
+        {
+          "type": "pr",
+          "title": "Content API update merged",
+          "url": "https://github.com/takatsusora-hash/git-orbit-mobile/pulls",
+          "status": "merged"
+        }
+      ]
+    },
+    {
+      "id": "cms",
+      "progressSignals": {
+        "pathExists": true,
+        "keyFiles": true,
+        "linkedWork": true,
+        "mergedToMain": true,
+        "build": "pass",
+        "typecheck": "pass",
+        "test": "pass",
+        "deploy": "unknown",
+        "runtime": "pass"
+      },
+      "checks": {
+        "exists": true,
+        "build": "pass",
+        "typecheck": "pass",
+        "test": "pass",
+        "deploy": "unknown",
+        "runtime": "pass",
+        "lastUpdatedAt": "6h"
+      },
+      "evidence": [
+        {
+          "type": "commit",
+          "title": "CMS bridge normalization",
+          "url": "https://github.com/takatsusora-hash/git-orbit-mobile/commit/main",
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "id": "analytics",
+      "progressSignals": {
+        "pathExists": true,
+        "keyFiles": true,
+        "linkedWork": false,
+        "mergedToMain": true,
+        "build": "pass",
+        "typecheck": "unknown",
+        "test": "unknown",
+        "deploy": "unknown",
+        "runtime": "pass"
+      },
+      "checks": {
+        "exists": true,
+        "build": "pass",
+        "typecheck": "unknown",
+        "test": "unknown",
+        "deploy": "unknown",
+        "runtime": "pass",
+        "lastUpdatedAt": "8h"
+      },
+      "evidence": [
+        {
+          "type": "artifact",
+          "title": "Analytics event sample",
+          "url": "https://github.com/takatsusora-hash/git-orbit-mobile/actions",
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "id": "deploy",
+      "progressSignals": {
+        "pathExists": true,
+        "keyFiles": true,
+        "linkedWork": true,
+        "mergedToMain": true,
+        "build": "pass",
+        "typecheck": "unknown",
+        "test": "pass",
+        "deploy": "pass",
+        "runtime": "pass"
+      },
+      "checks": {
+        "exists": true,
+        "build": "pass",
+        "typecheck": "unknown",
+        "test": "pass",
+        "deploy": "pass",
+        "runtime": "pass",
+        "lastUpdatedAt": "5h"
+      },
+      "evidence": [
+        {
+          "type": "action",
+          "title": "Deploy workflow green",
+          "url": "https://github.com/takatsusora-hash/git-orbit-mobile/actions",
+          "status": "pass"
+        }
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "from": "site-ui",
+      "to": "site-api",
+      "status": "active"
+    },
+    {
+      "from": "site-api",
+      "to": "cms",
+      "status": "active"
+    },
+    {
+      "from": "site-ui",
+      "to": "analytics",
+      "status": "untested"
+    },
+    {
+      "from": "site-api",
+      "to": "deploy",
+      "status": "active"
+    }
+  ]
+}
